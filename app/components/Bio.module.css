@@ -1,0 +1,8 @@
+.container {
+  justify-self: center;
+  width: 95%;
+  max-width: 55rem;
+  font-size: 2rem;
+  border-radius: 15px;
+  align-items: start;
+}

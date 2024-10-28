@@ -2,20 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --key: theme('colors.accent');
+  --keyborder: theme('colors.base-content');
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  scrollbar-width: none;
+}
+
+/*Base font size to define 1rem*/
+html {
+  font-size: 10px;
+}
+
+/*largest size displays*/
+@media (min-width: 1025px) {
+  html {
+    font-size: 16px;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
 }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/*smallest size displays*/
+@media (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+}
+

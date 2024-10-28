@@ -1,0 +1,36 @@
+.projectContainer {
+  display: flex;
+  gap: 1rem;
+  max-width: 95%;
+  margin-block: 3rem;
+}
+
+.projectContainerReverse {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  max-width: 95%;
+  margin-block: 3rem;
+.previewContainer {
+  align-content: center;
+  justify-items: center;
+  width: 20rem;
+  aspect-ratio: 16/9;
+  background: green;
+  filter: drop-shadow(-10px -10px 1px);
+}
+}
+
+.textContainer {
+  display: flexbox;
+  max-width: 20rem;
+}
+
+.previewContainer {
+  align-content: center;
+  justify-items: center;
+  width: 20rem;
+  aspect-ratio: 16/9;
+  background: green;
+  filter: drop-shadow(10px -10px 1px);
+}

@@ -1,0 +1,9 @@
+.footerContainer {
+  height: 15rem;
+  background: theme('colors.secondary');
+  filter:sepia(0.3);
+  margin-top: 10rem;
+  padding: 3rem;
+  display: flexbox;
+  justify-items: center;
+}
