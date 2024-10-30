@@ -4,7 +4,7 @@ import GithubSVG from '@/../public/social-media-svgs/github.svg'
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center bg-base-300 p-10">
+    <footer className="footer footer-center mt-10 bg-base-300 p-10">
       <nav>
         <div className="grid grid-flow-col gap-10">
           <a className='w-10' href='https://www.linkedin.com/in/villekautiainen/'>
