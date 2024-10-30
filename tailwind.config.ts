@@ -10,7 +10,10 @@ const config: Config = {
   theme: {
     fontFamily: {
       'preahvihear': ['var(--font-preahvihear)'],
-      'inter': ['var(--font-inter)']
+      'chilanka': ['var(--font-chilanka)'],
+      'klee-one': ['var(--font-klee-one)'],
+      'inter': ['var(--font-inter)'],
+      'titillium': ['var(--font-titillium)']
     },
     extend: {
       colors: {

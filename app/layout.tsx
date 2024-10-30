@@ -1,12 +1,19 @@
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { Preahvihear } from "next/font/google";
+import { Preahvihear, Titillium_Web } from "next/font/google";
 
 const preahvihear = Preahvihear({
   weight: '400',
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-preahvihear'
+})
+
+const titilium = Titillium_Web({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-titillium'
 })
 
 export default function RootLayout({
@@ -16,8 +23,8 @@ export default function RootLayout({
 }>) {
   return (
 
-    <html suppressHydrationWarning className={`${preahvihear.variable}`}>
-      <body>
+    <html suppressHydrationWarning className={`${preahvihear.variable} ${titilium.variable}`}>
+      <body className="font-titillium">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

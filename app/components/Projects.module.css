@@ -1,19 +1,19 @@
 .projectContainer {
   display: flex;
-  gap: 1rem;
-  max-width: 95%;
+  gap: 1.5rem;
   margin-block: 3rem;
+  max-width: 95%;
 }
 
 .projectContainerReverse {
   display: flex;
-  flex-direction: row-reverse;
-  gap: 1rem;
   max-width: 95%;
+  flex-direction: row-reverse;
+  gap: 1.5rem;
   margin-block: 3rem;
 
   .previewContainer {
-    filter: drop-shadow(-10px -10px 1px);
+    filter: drop-shadow(-10px -10px 1px rgba(0, 0, 0, 0.4));
   }
 .textContainer {
     justify-items: end;
@@ -23,16 +23,18 @@
 .textContainer {
   display: flexbox;
   max-width: 40rem;
+  flex: 1;
   align-content: center;
 }
 
 .previewContainer {
   align-content: center;
   justify-items: center;
+  max-width: 95%;
+  flex: 1.3;
   width: 30rem;
   aspect-ratio: 16/9;
-  background: green;
-  filter: drop-shadow(10px -10px 1px);
+  filter: drop-shadow(10px -10px 1px rgba(0, 0, 0, 0.4));
 }
 
 @media (max-width:900px) {
@@ -43,14 +45,18 @@
   .previewContainer {
     margin-block: 2rem;
     align-self: center;
-    width: 25rem;
+    width: 35rem;
     aspect-ratio: 16/9;
   }
 
   .projectContainerReverse {
     display: flex;
     flex-direction: column-reverse;
-
+    .textContainer {
+      justify-items: start;
+    }
   }
+
+
 
 }
