@@ -1,6 +1,7 @@
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Preahvihear, Titillium_Web } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react"
 
 const preahvihear = Preahvihear({
   weight: '400',
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html suppressHydrationWarning className={`${preahvihear.variable} ${titilium.variable}`}>
       <body className="font-titillium">
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
