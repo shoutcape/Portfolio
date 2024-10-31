@@ -5,6 +5,13 @@
   max-width: 95%;
 }
 
+.linksContainer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
 .projectContainerReverse {
   display: flex;
   max-width: 95%;
@@ -30,6 +37,7 @@
 .previewContainer {
   align-content: center;
   justify-items: center;
+  pointer-events: none;
   max-width: 95%;
   flex: 1.3;
   width: 30rem;
