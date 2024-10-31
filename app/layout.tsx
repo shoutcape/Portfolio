@@ -2,6 +2,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Preahvihear, Titillium_Web } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const preahvihear = Preahvihear({
   weight: '400',
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className="font-titillium">
         <ThemeProvider>{children}</ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
