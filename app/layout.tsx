@@ -3,6 +3,7 @@ import { ThemeProvider } from "next-themes";
 import { Preahvihear, Titillium_Web } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import Head from "next/head";
 
 const preahvihear = Preahvihear({
   weight: '400',
@@ -26,6 +27,9 @@ export default function RootLayout({
   return (
 
     <html suppressHydrationWarning className={`${preahvihear.variable} ${titilium.variable}`}>
+      <Head>
+        <title>Ville Kautiainen</title>
+      </Head>
       <body className="font-titillium">
         <ThemeProvider>{children}</ThemeProvider>
         <Analytics />
