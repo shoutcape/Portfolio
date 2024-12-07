@@ -14,8 +14,16 @@ const Projects = () => {
 
   const projectList: Project[] = [
     {
+      name: "Wheel of Fortune",
+      subheading: "Inspired by the Crazy time game show",
+      description: "Wheel of Fortune game, where players can bet on different outcomes and win multipliers or play bonus games for big wins, currently no user tied balance but could be a feature in the future.",
+      videourl: "https://www.youtube.com/embed/wMr4nhR1HYo?mute=1&autoplay=1&loop=1&playlist=wMr4nhR1HYo",
+      demolink: "https://wheel-of-fortune-shoutcape.vercel.app/wheeloffortune",
+      githublink: "https://github.com/shoutcape/wheel-of-fortune"
+    },
+    {
       name: "Tech Jobs Finland",
-      subheading: "Browse ALL Job listings on one page",
+      subheading: "Browse tech Job listings on one page",
       description: "I needed a quick way to browse all available job postings on Itduunit.fi. After some research, I found Duunitori’s open, free-to-use API and built an app that fetches all job postings from their site and presents them without any unnecessary bloat. This taught me about fetching large amounts of data in small pieces to speed up load times.",
       videourl: "https://www.youtube.com/embed/PY5Um1g69vc?mute=1&autoplay=1&loop=1&playlist=PY5Um1g69vc",
       demolink: "https://tech-jobs-finland.netlify.app",
