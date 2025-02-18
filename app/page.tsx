@@ -16,7 +16,7 @@ const App = () => {
         <div className={styles.container}>
           <Monitor />
           <div className={styles.name}>
-            <h1>Ville <br/> Kautiainen</h1>
+            <h1>Ville<br/>Kautiainen</h1>
           </div>
           <Coffee />
           <Keyboards />
