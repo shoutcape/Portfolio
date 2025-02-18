@@ -29,6 +29,8 @@ export default function RootLayout({
     <html suppressHydrationWarning className={`${preahvihear.variable} ${titilium.variable}`}>
       <Head>
         <title>Ville Kautiainen</title>
+        <meta name="description" content="Ville Kautiainen's Software Development Portfolio"/>
+        <meta name="keywords" content="Ville Kautiainen, Software Development, Software, Student" />
       </Head>
       <body className="font-titillium">
         <ThemeProvider>{children}</ThemeProvider>
