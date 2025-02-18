@@ -65,19 +65,19 @@ const Projects = () => {
 
   return (
     <div className='mt-10 flex flex-col items-center'>
-      <h1 className='text-3xl mb-10'>Projects</h1>
+      <h2 className='text-3xl mb-10'>Projects</h2>
 
       {projectList.map((project, index) => (
         <div key={index} className={index % 2 == 0 ? styles.projectContainer : styles.projectContainerReverse}>
           <div className={`${styles.textContainer}`}>
-            <h1 className='text-3xl'>{project.name}</h1>
+            <h2 className='text-3xl'>{project.name}</h2>
             <h3 className='text-lg text-end-10 pb-5'>{project.subheading}</h3>
             <p className='text-xl'>{project.description}</p>
             <div className={`${styles.linksContainer}`}>
               {project.demolink && 
-                <a role='button' href={project.demolink} className='btn btn-accent p-4'>Live Demo</a>
+                <a role='button' href={project.demolink} target='_blank' className='btn btn-accent p-4'>Live Demo</a>
               }
-              <a href={project.githublink}>
+              <a href={project.githublink} target='_blank'>
                 <GithubSVG className='w-12 h-12 fill-base-content' />
               </a>
             </div>
@@ -87,7 +87,6 @@ const Projects = () => {
           </div>
         </div>
       ))}
-
     </div >
   )
 }

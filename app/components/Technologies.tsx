@@ -27,7 +27,7 @@ JavascriptSVG
 const Technologies = () => {
   return (
     <div>
-      <h1 className='text-center text-3xl'>Technologies</h1>
+      <h2 className='text-center text-3xl'>Technologies</h2>
       <div className='flex justify-center items-center'>
         <div className={styles.highlight}/>
         <div className={`${styles.techContainer}`}>

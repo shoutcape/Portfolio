@@ -3,7 +3,7 @@ import { ThemeProvider } from "next-themes";
 import { Preahvihear, Titillium_Web } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import Head from "next/head";
+import { Metadata } from "next";
 
 const preahvihear = Preahvihear({
   weight: '400',
@@ -19,19 +19,19 @@ const titilium = Titillium_Web({
   variable: '--font-titillium'
 })
 
+export const metadata: Metadata = {
+    title: "Ville Kautiainen",
+    description: "Software Development Portfolio of Ville Kautiainen",
+    keywords: ["Ville Kautiainen", "Software Development", "Software", "Student"]
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-
     <html suppressHydrationWarning className={`${preahvihear.variable} ${titilium.variable}`}>
-      <Head>
-        <title>Ville Kautiainen</title>
-        <meta name="description" content="Ville Kautiainen's Software Development Portfolio"/>
-        <meta name="keywords" content="Ville Kautiainen, Software Development, Software, Student" />
-      </Head>
       <body className="font-titillium">
         <ThemeProvider>{children}</ThemeProvider>
         <Analytics />

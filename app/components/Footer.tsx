@@ -7,10 +7,10 @@ const Footer = () => {
     <footer className="footer footer-center mt-10 bg-base-300 p-10">
       <nav>
         <div className="grid grid-flow-col gap-10">
-          <a className='w-10' href='https://www.linkedin.com/in/villekautiainen/'>
+          <a className='w-10' href='https://www.linkedin.com/in/villekautiainen/' target='_blank'>
             <LinkedinSVG />
           </a>
-          <a className='w-10' href='https://github.com/shoutcape'>
+          <a className='w-10' href='https://github.com/shoutcape' target='_blank'>
             <GithubSVG />
           </a>
         </div>
