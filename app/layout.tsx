@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning className={`${preahvihear.variable} ${titilium.variable}`}>
       <body className="font-titillium">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider attribute="data-theme" defaultTheme="retro" enableSystem={false}>{children}</ThemeProvider>
         <Analytics />
         <SpeedInsights />
       </body>

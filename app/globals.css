@@ -1,14 +1,67 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "cupcake";
+}
+@plugin "daisyui/theme" {
+  name: "retro";
+}
+@plugin "daisyui/theme" {
+  name: "valentine";
+}
+@plugin "daisyui/theme" {
+  name: "halloween";
+}
+@plugin "daisyui/theme" {
+  name: "garden";
+}
+@plugin "daisyui/theme" {
+  name: "forest";
+}
+@plugin "daisyui/theme" {
+  name: "pastel";
+}
+@plugin "daisyui/theme" {
+  name: "luxury";
+}
+@plugin "daisyui/theme" {
+  name: "dracula";
+}
+@plugin "daisyui/theme" {
+  name: "cmyk";
+}
+@plugin "daisyui/theme" {
+  name: "autumn";
+}
+@plugin "daisyui/theme" {
+  name: "business";
+}
+@plugin "daisyui/theme" {
+  name: "lemonade";
+}
+@plugin "daisyui/theme" {
+  name: "night";
+}
+@plugin "daisyui/theme" {
+  name: "coffee";
+}
+@plugin "daisyui/theme" {
+  name: "dim";
+}
+@plugin "daisyui/theme" {
+  name: "nord";
+}
+@plugin "daisyui/theme" {
+  name: "sunset";
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
-  --key: theme('colors.accent');
-  --keyborder: theme('colors.base-content');
+  --key: var(--color-accent);
+  --keyborder: var(--color-base-content);
 }
 
 html, body {
@@ -47,4 +100,3 @@ html {
     font-size: 10px;
   }
 }
-
