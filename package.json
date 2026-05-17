@@ -31,5 +31,10 @@
     "tailwindcss": "4.3.0",
     "typescript": "6.0.3",
     "webpack": "5.106.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "postcss": "8.5.14"
+    }
   }
 }
